@@ -1,7 +1,19 @@
 # Summary of current directory
 
 This folder contains data pertaining to the Enterics AMR Primer Panel positive controls design and testing.  
-It contains all intermediate files pertaining to the design of positive controls for Twist Bioscience
+It contains all files pertaining to the design of positive controls for Twist Bioscience  
+
+The basic premise of the design is as follows:  
+ 1. For each amplicon ("target"), identify the length and GC content
+ 2. Search along the positive control genome via sliding windows (where window = target length) for a chunk with GC content equal to target's GC content
+ 3. Save this chunk as the positive control for that target
+
+Note: if desired, the windows could be randomly sorted before searching for a chunk with matching GC content, but it was decided that this was not necessary for this project.  Thus, most of the positive controls are from the first part of the genome and are similar to one another.  
+
+The positive controls were designed in 3 phases: 
+ 1. Get as many matches as possible with Coliphage phi-X174 as the target genome 
+ 2. Run the script again, against Streptomyces coelicolor, to get matches for the targets with high GC content
+ 3. Run it against Wolbachia pipientis to get matches for the targets with low GC content
 
 ## Location of Data
 
@@ -9,12 +21,6 @@ Current Path: `/scicomp/home/ick4/data/collabs/pos_ctrls/twist`  (referred to he
 
 
 ## Description of Contents
-`$PROJECT/S_coelicolor`
-This directory contains all the data for the design of the positive controls for amplicons with high GC content 
-
-
-`$PROJECT/Wolbachia`
-This directory contains all the data for the design of the positive controls for amplicons with low GC content
 
 `$PROJECT/NC_001422.1_phiX174.fasta`
 Coliphage phi-X174, complete genome, https://www.ncbi.nlm.nih.gov/nuccore/9626372, downloaded May 18, 2019.
@@ -62,13 +68,13 @@ Streptomyces coelicolor A3(2) (high GC Gram+)genome, https://www.ncbi.nlm.nih.go
 Wolbachia pipientis genome, https://www.ncbi.nlm.nih.gov/assembly/GCF_001752665.1/, downloaded May 18, 2019
 
 	
-These files were generated using the following python script:
-`pos_controls.py`
-Located in: /scicomp/home/ick4/data/collabs/pos_ctrls
-Also located inside the `pycharm` directory, as I used PyCharm for this project
-Symlinked to: /scicomp/home/ick4/scripts
-Created by: Jessica Rowell
-Last modified: 08/06/2019
+These files were generated using the following python script:  
+`pos_controls.py`  
+Located in: /scicomp/home/ick4/data/collabs/pos_ctrls  
+Also located inside the `pycharm` directory, as I used PyCharm for this project  
+Symlinked to: /scicomp/home/ick4/scripts  
+Created by: Jessica Rowell  
+Last modified: 08/06/2019  
 
 
 ## END
