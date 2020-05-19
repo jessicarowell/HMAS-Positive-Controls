@@ -19,9 +19,9 @@ Each line is one primer, not one primer pair (hence 1498 lines of data instead o
 	
 These files were generated using the following python script:
 `pos_controls.py`
-Located in: /scicomp/home/ick4/data/collabs/pos_ctrls
+Located in: `/scicomp/home/ick4/data/collabs/pos_ctrls`
 Also located inside the `pycharm` directory, as I used PyCharm for this project
-Symlinked to: /scicomp/home/ick4/scripts
+Symlinked to: `/scicomp/home/ick4/scripts`
 Created by: Jessica Rowell
 Last modified: 08/06/2019
 
