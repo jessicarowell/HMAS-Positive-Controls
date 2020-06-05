@@ -46,18 +46,6 @@ The final file of the positive controls designed against S. coelicolor or Wolbac
 `$PROJECT/positive_controls_outliers.txt`
 A text file of the positive controls in the fasta above (n=157); lists primer name, forward primer, revers primer, and synthetic target
 
-`$PROJECT/controls_found.txt`
-List of primer names and GC content for targets where a pos control from Phi-X174 was found
-
-`$PROJECT/controls_found.png`
-Histogram of GC content for matched targets
-
-`$PROJECT/controls_not_found.txt`
-List of primer names and GC content for targets where a pos control from Phi-X174 was not found
-
-`$PROJECT/controls_not_found.png`
-Histogram of GC content for non-matched targets
-
 `$PROJECT/distribution_length_N157.PNG`
 Histogram of amplicon target for non-matched targets
 
@@ -67,6 +55,20 @@ Streptomyces coelicolor A3(2) (high GC Gram+)genome, https://www.ncbi.nlm.nih.go
 `$PROJECT/GCF_001752665.1_ASM175266v1_genomic.fna`
 Wolbachia pipientis genome, https://www.ncbi.nlm.nih.gov/assembly/GCF_001752665.1/, downloaded May 18, 2019
 
+`$PROJECT/gc_found.txt`
+A list of GC content values for all the targets that do have positive controls made from phiX-174 genome
+
+`$PROJECT/gc_not_found.txt`
+A list of GC content values for all the targets that did not have positive controls after the first run against thephiX-174 genome
+
+`$PROJECT/histogram.png`
+A histogram showing the distribution of found vs. not found targets across the range of GC content values
+
+`$PROJECT/histograms.R`
+This just contains the simple code I used to generate `histogram.png` 
+
+`$PROJECT/PositiveControls.pdf`
+A pdf copy of the PowerPoint presentation given at CIMS meeting June 2020 
 	
 These files were generated using the following python script:  
 `pos_controls.py`  
