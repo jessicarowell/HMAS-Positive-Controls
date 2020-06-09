@@ -67,8 +67,6 @@ A histogram showing the distribution of found vs. not found targets across the r
 `$PROJECT/histograms.R`
 This just contains the simple code I used to generate `histogram.png` 
 
-`$PROJECT/PositiveControls.pdf`
-A pdf copy of the PowerPoint presentation given at CIMS meeting June 2020 
 	
 These files were generated using the following python script:  
 `pos_controls.py`  

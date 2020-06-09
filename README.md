@@ -29,6 +29,9 @@ The main folder, contains all the data for the design of the positive controls
 Lists the 1498 primers on the original panel, including forward/reverse indicator. 
 Each line is one primer, not one primer pair (hence 1498 lines of data instead of 749).
 
+`$PROJECT/PositiveControls.pdf`
+A pdf copy of the PowerPoint presentation given at CIMS meeting June 2020
+
 	
 These files were generated using the following python script:  
 `pos_controls.py`  
